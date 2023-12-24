@@ -60,9 +60,9 @@ function updateSpiderMan() {
 
 let spiderMan = {
   x: 500,        // Initial horizontal position
-  y: canvas.height-50,        // Initial vertical position
-  width: 50,     // Width of the Spider-Man sprite
-  height: 50,    // Height of the Spider-Man sprite
+  y: canvas.height-80,        // Initial vertical position
+  width: 60,     // Width of the Spider-Man sprite
+  height: 80,    // Height of the Spider-Man sprite
   color: 'red',  // This can be a placeholder if you're using an image
   isJumping: false, // To track whether Spider-Man is currently jumping
   jumpSpeed: 20,
