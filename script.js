@@ -1,3 +1,4 @@
+const controlsText = "Controls: Arrow Keys to move left and right and jump, w to shoot web";
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
@@ -39,6 +40,7 @@ function gameLoop() {
   updateAndDrawWeb();
   updateSpiderMan();
   drawSpiderMan();
+  drawControls();
 }
 
 function updateSpiderMan() {
@@ -117,6 +119,13 @@ function shootWeb() {
       spiderMan.isShootingWeb = true;
       spiderMan.webLength = 0;
   }
+}
+
+function drawControls() {
+  ctx.font = '16px Arial';
+  ctx.fillStyle = 'black';
+  ctx.textAlign = 'left';
+  ctx.fillText(controlsText, 10, 20); // 10px from the left and 20px from the top
 }
   
 function handleKeyDown(e) {
