@@ -9,7 +9,7 @@ body, html {
   }
   
   canvas {
-    background: #000; /* Black for contrast */
+    background: #e4dada; /* Black for contrast */
     border: 1px solid #fff; /* White border */
     margin-top: 20px;
   }
